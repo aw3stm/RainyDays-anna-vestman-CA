@@ -1,0 +1,27 @@
+.prod-img-cart{
+max-width: 14rem;
+border: var(--border);
+border-radius: var(--border-radius);
+}
+
+.trash-img{
+  position: absolute;
+  bottom: 275px;
+  right: 30px;
+}
+.card-left{
+ width: 600px;
+ border: 1px solid black;
+ border-radius: 8px;
+ background-color: rgb(0, 0, 0, 0.1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+ margin: 45 0;
+ position: relative;
+}
+
+.card-l-content{
+ margin: 0 0 0 20px;
+}

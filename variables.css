@@ -6,8 +6,8 @@
   --h1-font: 'alexandria';
   --h2-font: 'albert sans';
   --p-font: 'albert sans';
-  --h1-size: 5.875rem;
-  --h2-size: 3.125rem;
+  --h1-size: 4rem;
+  --h2-size: 2.5rem;
   --h3-size: 2.5rem;
   --h4-size: 2rem;
   --h5-size: 1.75rem;
@@ -23,6 +23,9 @@
 --spacing-medium: 16px;
 --spacing-large: 32px;
 --spacing-xl: 64px;
+
+--standard-width: 1144px;
+
 
 /*BACKGROUND*/
 --bg-white: #FFF;
