@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--main-font);
+  color: var(--text-dark);
+  width: 100%;
+  padding: var(--spacing-small);
+  background-color: blue;
+}
+
+
+h1{
+  font-family: var(--h1-font);
+  font-size: var(--h1-size);
+  font-weight: 700;
+  width: 100%;
+  letter-spacing: -1px;
+}
+
+h2{
+  font-family: var(--h2-font);
+  font-size: var(--h2-size);
+  font-weight: 500;
+  width: 100%;
+  letter-spacing: -1px;
+}
+
+p{
+  font-family: var(--p-font);
+  font-size: var(--p-size);
+  font-weight: 400;
+  line-height: var(--p-height);
+  margin: var(--spacing-small);
+}
+
+a{
+  text-decoration: none;
+  color: var(--green-main);
+  font-weight: 500;
+}
+
+a:hover{
+  color: var(--green-secondary);
+}
+
+.primary-button{
+  font-family: var(--main-font);
+  font-size: var(--button-size);
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: var(--green-main);
+  color: var(--text-light);
+  padding: var(--spacing-medium) var(--spacing-large);
+  border: none;
+}
+
+.primary-button:hover{
+  background-color: var(--green-secondary);
+  cursor: pointer;
+  transition: all 0.20s ease;
+}
+
+.buy-button{
+  font-family: var(--main-font);
+  font-size: var(--button-size);
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: var(--green-main);
+  color: var(--text-light);
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: none;
+}
+
+.buy-button:hover{
+  background-color: var(--green-secondary);
+  cursor: pointer;
+  transition: all 0.20s ease;
+}
+
+.with-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.with-arrow:hover > img{
+  transform:translateX(4px)
+}
+
+.with-arrow > img{
+  transition: 0.25s ease;
+}
