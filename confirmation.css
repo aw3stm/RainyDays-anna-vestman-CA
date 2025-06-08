@@ -1,0 +1,59 @@
+#heart-checkbox-1, 
+label{
+display: none;
+}
+
+
+label::before {
+  font-family: "font awesome 5 free";
+  font-weight: 400;
+  content: "\f004";
+}
+
+#heart-checkbox-1:checked + label::before{
+  font-family: "font awesome 5 free";
+  font-weight: 700;
+  color: var(--green-main);
+  content: "\f004";
+}
+
+.confirmation{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  justify-self: center;
+  border: 0.4px solid #000;
+  border-radius: 10px;
+  padding: 80px;
+  margin: 0 0 40px 0;
+}
+
+.confirmation-card-left{
+  justify-self: center;
+}
+
+
+#conf-img{
+  max-width: 443px;
+  border-radius: 8px;
+}
+
+.prod-img-conf {
+max-width: 300px;
+border: 0.4 solid grey;
+border-radius: 8px;
+
+}
+
+.conf-h1{
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.conf-text{
+  justify-self: center;
+  align-self:self-end;
+}
+
+
+

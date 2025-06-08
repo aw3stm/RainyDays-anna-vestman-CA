@@ -1,27 +1,136 @@
-.prod-img-cart{
-max-width: 14rem;
-border: var(--border);
-border-radius: var(--border-radius);
+/*--------------------------------
+PRIMARY CARD
+---------------------------------*/
+.cards{
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+  margin: 100px 0 0 0;
 }
 
-.trash-img{
-  position: absolute;
-  bottom: 275px;
-  right: 30px;
-}
-.card-left{
- width: 600px;
- border: 1px solid black;
- border-radius: 8px;
- background-color: rgb(0, 0, 0, 0.1);
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 50px;
- margin: 45 0;
- position: relative;
+.card{
+  border: 0.4px solid white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .45);
+  max-width: 350px;
+  border-radius: 8px;
 }
 
-.card-l-content{
- margin: 0 0 0 20px;
+.card-img{
+  max-height: 350px;
+  width: auto;
+  padding: 2em;
+}
+
+
+.card-text{
+  border: 0.4px solid white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, .20);
+  background: linear-gradient(121deg, #FFF6ED 23.7%, #F1F1F1 137.95%);
+  color: #000;
+  padding: 2em;
+}
+
+.h2-card{
+  font-size: 1.5rem;
+}
+
+.p-card{
+  font-size: 1rem;
+}
+
+.primary-button-card{
+  font-family: var(--main-font);
+  font-size: var(--button-size);
+  font-weight: 400;
+  border-radius: 40px;
+  background-color: var(--green-main);
+  color: var(--text-light);
+  border: none;
+  width: 280px;
+  height: 50px;
+  margin: 1em 0 0 0;
+}
+
+.primary-button-card:hover{
+  background-color: var(--green-secondary);
+  cursor: pointer;
+  transition: all 0.20s ease;
+  font-weight: 700;
+}
+
+/*--------------------------------
+PRIMARY CARD
+---------------------------------*/
+
+.card-sum{
+max-width: 600px;
+height: auto;
+align-self: center;
+ display: grid;
+ gap: 2em;
+ padding: 4em;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: repeat(4, 1fr);
+ grid-template-areas: 
+ "h2-card h2-card"
+ "p-sub p-sub-2"
+ "p-del p-del-2"
+ "p-taxes p-taxes-2"
+ "h2-total p-total-2"
+}
+
+.h2-card{
+  grid-area: h2-card;
+  align-self: center;
+  justify-self: center;
+}
+
+.p-sub{
+  grid-area: p-sub;
+  justify-self: start;
+}
+
+.p-sub-2{
+  grid-area: p-sub-2;
+  justify-self: end;
+}
+
+.p-del{
+  grid-area: p-del;
+  justify-self: start;
+}
+
+.p-del-2{
+  grid-area: p-del-2;
+  justify-self: end;
+}
+
+.p-taxes{
+  grid-area: p-taxes;
+  justify-self: start;
+}
+
+.p-taxes-2{
+  grid-area: p-taxes-2;
+  justify-self: end;
+}
+
+.h2-total{
+  grid-area: h2-total;
+  justify-self: start;
+}
+
+.p-total-2{
+  grid-area: p-total-2;
+  justify-self: end;
+}
+
+.cart-buttons{
+display: grid;
+justify-content: center;
+margin: 5px 0 100px 0;
+}
+
+  .trash-img{
+ margin: 20px auto;
 }
